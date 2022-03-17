@@ -4,7 +4,7 @@
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 BODY {
-	background: #EEE;
+	background: #DADADA;
 	font-family: sans-serif;
 	font-size: 14px;
 	margin: 0;
@@ -30,13 +30,10 @@ SECTION>.blockbody, .comment, .setupblock {
 	border: 1px solid #CCC;
 }
 SECTION>.blockbody, H1, SECTION>H3, FOOTER, .comment, .setupblock {
-	margin: 8px;
-	padding: 8px;
-	border-radius: 12px; /* standard, webkit, opera */
-	-moz-border-radius: 12px; /* mozilla haven't committed yet */
-	box-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* standard, opera */
-	-webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* webkit haven't committed yet */
-	-moz-box-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* mozilla haven't committed yet */
+	margin: 2px;
+	padding: 2px;
+	border-radius: 2px; /* standard, webkit, opera */
+	-moz-border-radius: 2px; /* mozilla haven't committed yet */
 }
 THEAD {
 	font-weight: bold;
@@ -62,6 +59,10 @@ FOOTER {
 	border: 1px solid #AAA;
 }
 
+HEADER {
+  display: none;
+}
+
 A {text-decoration: none;}
 A:hover {text-decoration: underline;}
 
@@ -74,10 +75,10 @@ UL {
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 NAV {
-	width: 200px;
+	width: 150px;
 	float: left;
 	text-align: center;
-	margin-left: 16px;
+	margin-left: 0px;
 }
 NAV .blockbody {
 	font-size: 0.85em;
@@ -132,9 +133,9 @@ TABLE.tag_list>TBODY>TR>TD:after {
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 ARTICLE {
-	margin-left: 226px;
-	margin-right: 16px;
-	margin-top: 16px;
+	margin-left: 155px;
+	margin-right: 0px;
+	margin-top: 0px;
 	text-align: center;
 	height: 1%;
 }
@@ -170,11 +171,17 @@ ARTICLE TABLE {
 .thumb IMG {
 	border: 1px solid #CCC;
 	background: #DDD;
-	padding: 8px;
-	border-radius: 12px; /* standard, webkit, opera */
-	-moz-border-radius: 12px; /* mozilla haven't committed yet */
-	box-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* standard, opera */
-	-webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* webkit haven't committed yet */
-	-moz-box-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* mozilla haven't committed yet */
 }
+
+#Imagemain > h3:nth-child(1) {
+  display: none;
+}
+
+#Videomain > h3:nth-child(1) {
+  display: none;
+}
+#image-list > h3:nth-child(1) {
+  display: none;
+}
+
 
